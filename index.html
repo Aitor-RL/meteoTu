@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeteoTu</title>
+  </head>
+  <body>
+    <div class="flex flex-col w-full items-center">
+      <h1>MeteoTu</h1>
+      <div class="flex flex-col items-center">
+        <div>Introduce la ciudad</div>
+        <div>
+          <input type="text" id="city" placeholder="ciudad"/>
+          <button class="ml-2 text-orange-400" id="geo">GEOLOCALIZATE</button>
+        </div>
+        <div id="actTemp" class="text-6xl m-2">...</div>
+        <div id="actState" class="text-3xl">...</div>
+      </div>
+      <hr class="w-3/4 mt-6 mb-6"/>
+      <div class="flex w-full justify-evenly">
+        <div class="flex flex-col items-center">
+          <div class="font-extrabold">Hoy</div>
+          <div id="todayTemp">...</div>
+          <div id="todayState">...</div>
+
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="font-extrabold">Mañana</div>
+          <div id="tomorrowTemp">...</div>
+          <div id="tomorrowState">...</div>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="font-extrabold">Pasado</div>
+          <div id="tomorrow2Temp">...</div>
+          <div id="tomorrow2State">...</div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
